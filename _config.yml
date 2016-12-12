@@ -1,36 +1,34 @@
 menus:
-	- 
-		name: 首页
-		link: /
-	- 
-		name: 分类
-		link: categories/
-	- 
-		name: 开源项目
-		link: open-source/
-	- 
-		name: 留言板
-		link: message/
+    -
+        name: 首页
+        link: /
+    -
+        name: 分类
+        link: categories/
+    -
+        name: 开源项目
+        link: open-source/
+    -
+        name: 留言板
+        link: message/
 
 # Profile
 profile:
-	location: ChengDu, China
-	github: yumemor
-	#stackoverflow: 
-		#title: yumemor
-		#href: http://stackoverflow.com/users/5662132/yumemor
-	#organization: 组织/公司
+    location: QingDao, China
+    github: litreily
+    organization: upc
 
 #Github
-github: 
-	username: yumemor
-  popular_repos: [ysale-sms,scude-answer,cordova-plugin-alipay]
+github:
+  username: litreily
+  popular_repos: [hexoBlogProject,jekyllBlog,Student]
 
 #Comments
-duoshuo_username: yumemor # 多说配置
-#disqus_username: yumemor # disqus 配置
+youyan_username: litreily
+duoshuo_username: litreily # 多说配置
+#disqus_username: litreily # disqus 配置
 
-# Search 
+# Search
 # google | local
 search:
     use: local

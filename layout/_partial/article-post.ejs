@@ -8,7 +8,7 @@
             <% if (page.share == undefined ? true : page.share) { %>
                 <div class="share">
                     <%- partial('_widget/sns-share') %>
-                </div>    
+                </div>
             <% } %>
             <%if(theme.disqus_username){%>
                 <%- partial('_widget/disqus-comments',{
@@ -17,7 +17,7 @@
                     url: config.url+url_for(post.path)
                 }) %>
             <%} else {%>
-                <%- partial('_widget/duoshuo-comments',{
+                <%- partial('_widget/youyan-comments',{
                     key: post.slug,
                     title: post.title,
                     url: config.url+url_for(post.path)

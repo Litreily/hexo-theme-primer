@@ -4,8 +4,8 @@
         <%- partial('post/title', {class_name: 'article-title'}) %>
       </h3>
       <div class="repo-list-description">
-        <% if (post.excerpt && index){ %>
-          <%- post.excerpt %>
+        <% if (post.description && index){ %>
+          <%- post.description %>
         <% } else { %>
           <%- post.content %>
         <% } %>
@@ -22,7 +22,7 @@
             <%- getCategory(post)%>
           </span>
         <%}%>
-      
+
         <!--
           <% if (post.tags && post.tags.length){ %>
             <%- list_tags(post.tags, {
@@ -31,7 +31,7 @@
             }) %>
           <% } %>
         -->
-
       </p>
+
     </div>
   </article>

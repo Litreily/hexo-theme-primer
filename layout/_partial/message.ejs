@@ -9,7 +9,19 @@
 
             </article>
 
-            <%- partial('_widget/youyan-comments') %>
+            <%if(theme.disqus_username){%>
+                <%- partial('_widget/disqus-comments',{
+                    key: post.slug,
+                    title: post.title,
+                    url: config.url+url_for(post.path)
+                }) %>
+            <%} else {%>
+                <%- partial('_widget/duoshuo-comments',{
+                    key: post.slug,
+                    title: post.title,
+                    url: config.url+url_for(post.path)
+                }) %>
+            <%}%>
         </div>
         <!-- <div class="column one-fourth">
             <% if (page.toc == undefined ? true:page.toc) { %>

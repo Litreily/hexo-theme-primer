@@ -18,17 +18,17 @@ profile:
     github: litreily
     organization: upc
 
-#Github
+# Github
 github:
   username: litreily
   popular_repos: [hexoBlogProject,jekyllBlog,Student]
 
-#Comments
+# Comments
 youyan_username: litreily
 duoshuo_username: litreily # 多说配置
 #disqus_username: litreily # disqus 配置
 
 # Search
-# google | local
+## google | local
 search:
     use: local

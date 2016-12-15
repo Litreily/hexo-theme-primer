@@ -122,6 +122,9 @@ ul.article-tag-list>li a
 .list-group-item>.badge
     float: right
 
+.list-group-item>a
+    color: #666
+
 .badge
     display: inline-block
     min-width: 10px
@@ -141,3 +144,46 @@ ul.article-tag-list>li a
 
 #container-open-source
     margin-top:150px
+
+
+/* update by litreily */
+
+
+pre.descriptions
+    font-size: 14px !important;
+    border-left: 3px solid #4996D1;
+    border-radius: 0 !important;
+    background-color: rgba(255,255,255,0) !important;
+    margin-left: 2em;
+
+.tagBlack a, .tagGrey a{
+    text-decoration: none !important;
+    transition: background-color .2s ease;
+    padding: .4em .6em;
+    margin: 0 3px 3px 0;
+    line-height: 1;
+    white-space: nowrap;
+    font-size: 12px;
+    border: 1px solid transparent;
+    display: inline-block;
+    border-radius: 4px;
+}
+
+.tagBlack a{
+    color: #FFF;
+    background-color: #2f3337;
+    &:hover{
+        color: #FFF;
+        background-color: #0C0D0E;
+    }
+}
+
+.tagGrey a{
+    color: #535a60;
+    background-color: #eff0f1;
+    border-color: #d6d9dc;
+    &:hover{
+        color: #535a60;
+        background-color: #D6D9DC;
+    }
+}

@@ -6,6 +6,9 @@ menus:
         name: 分类
         link: categories/
     -
+        name: 标签
+        link: tags/
+    -
         name: 开源项目
         link: open-source/
     -

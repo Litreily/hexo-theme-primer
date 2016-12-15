@@ -1,0 +1,17 @@
+<section class="container">
+    <div class="columns">
+        <div class="column two-thirds" >
+            <% site.tags.each(function(tag){ %>
+                <%if(page.tag == tag.name){%>
+                    <% tag.posts.each(function(post){ %>
+                        <%- partial('article', {post: post, index: true}) %>
+                    <% }) %>
+                <%}%>
+            <% }) %>
+        </div>
+        <div class="column one-third">
+            <%- partial('_widget/sidebar-search') %>
+            <%- partial('_widget/sidebar-tags') %>
+        </div>
+    </div>
+</section>

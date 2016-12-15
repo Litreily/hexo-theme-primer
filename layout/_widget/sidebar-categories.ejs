@@ -1,0 +1,17 @@
+<%if(site.categories.length){%>
+	<h3>Blog Categories</h3>
+	<div id="blog-categories">
+		<ul class="list-group">
+				<li class="list-group-item">
+					<a href="/categories/"><%="全部"%></a>
+	            	<span class="badge"><%=site.posts.length%></span>
+	        	</li>			
+			<% site.categories.each(function(category){ %>
+				<li class="list-group-item">
+					<a href = <%= '/' + category.path %> title=""><%=category.name%></a> 
+	            	<span class="badge"><%=category.posts.length%></span>
+	        	</li>
+	 		<% }) %>
+		</ul>
+	</div>
+<%}%>

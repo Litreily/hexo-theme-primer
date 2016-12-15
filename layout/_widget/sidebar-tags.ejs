@@ -4,7 +4,7 @@
 		<ul class="list-group">
 			<% site.tags.each(function(tag){ %>
 				<li class="list-group-item">
-					<%=tag.name%>
+					<a href = <%= '/' + tag.path %> title=""><%=tag.name%></a> 
 	            	<span class="badge"><%=tag.posts.length%></span>
 	        	</li>
 	 		<% }) %>

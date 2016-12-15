@@ -1,0 +1,20 @@
+#tagCloud{
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    
+}
+
+#tagCloud a{
+    transition: all ease-in-out .5s;
+    display: inline-block;
+    color: #666;
+    padding: 4px 10px;
+    margin: 4px 8px;
+}
+
+#tagCloud a:hover{
+    color: #fff;
+    text-decoration: none;
+    background: #666;
+}

@@ -1,7 +1,5 @@
 <body>
 	<%- partial('_partial/header') %>
 	<%- partial('_partial/banner-post',{post: page,index: false}) %>
-	<section class="container">
-    	<%- tagcloud(site.tags, {min_font:15, max_font:30}) %>
-	</section>
+	<%- partial('_widget/tag-cloud') %>
 	

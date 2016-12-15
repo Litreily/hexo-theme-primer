@@ -6,7 +6,7 @@
 }
 
 #tagCloud a{
-    transition: all ease-in-out .5s;
+    transition: all .5s ease-in-out;
     display: inline-block;
     color: #666;
     padding: 4px 10px;
